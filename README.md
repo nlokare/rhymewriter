@@ -4,5 +4,7 @@ To help song writers, poets, and other artists generate lyrics by providing an i
 
 ##Stack
 <p>Node.js and Express</p>
-<p>Bluebird promises for asynchronicity</p>
-<p>Rhymebrain's RESTful API</p>
+<p>Mongoose ORM and MongoDB</p>
+<p>RhymeBrain's API</p>
+<p>Angular</p>
+<p>Bootstrap</p>
