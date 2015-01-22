@@ -1,17 +1,27 @@
 {
-  "name": "rhymer",
-  "version": "0.0.0",
-  "description": "",
+  "name": "Rhyme_Writer",
+  "version": "1.0.0-5",
+  "description": "Song writing application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
-  "author": "",
+  "author": "Neil Lokare | neil.lokare@gmail.com | github.com/nlokare",
   "license": "ISC",
   "dependencies": {
     "bluebird": "~2.6.4",
     "express": "~4.11.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "body-parser": "~1.10.1",
+    "sendmail": "*",
+    "passport": "~0.2.1",
+    "passport-facebook": "~1.0.3",
+    "express-session": "~1.10.1",
+    "method-override": "~2.3.1",
+    "mongoose": "~3.8.21"
+  },
+  "subdomain": "rhymewriter",
+  "engines": {
+    "node": "0.10.x"
   }
 }

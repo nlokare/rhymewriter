@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <span class="navbar-brand branding">Rhyme Writer</span>
+      <ul class="nav navbar-nav">
+        <li><a href='/#/' class='index'>Home</a></li>
+        <li><a href='/#/app/write' class='index'>Compose</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="col-md-6">
+    <form>
+      <h3>Compose</h3>
+      <input type="text" class="form-control" id="title" ng-model="songtitle" placeholder="Enter a title">
+      <textarea class="ta10" cols="80" rows="20" id="composer" ng-model="song"></textarea>
+      <input type="email" class="form-control" id="email" ng-model="email" placeholder="Enter email"> 
+      <button type="submit" id="send" ng-click="send(songtitle, song, email)" class="btn btn-default">Send</button>
+      <div class="alert alert-success" role="alert">Successfully sent</div>
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+  <div class="col-md-4">
+    <h3>Suggested Rhymes</h3>
+    <table class="table tabled-bordered">
+      <tr class='fx-fade-down fx-easing-bounce' ng-repeat="word in rhymes">
+        <td class='entry' ng-model="word">{{ word }}</td>
+        <td><button type="button" ng-click="add()" class="btn btn-default btn-lg btn-block add">Add</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>

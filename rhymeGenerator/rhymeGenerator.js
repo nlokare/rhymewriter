@@ -23,8 +23,12 @@ exports.objectifyRhymes = function (data) {
   return new Promise(function (resolve, reject) {
     var rhymes = {};
     var results = JSON.parse(data);
+    var counter = 0;
     _.each(results, function (entry) {
-      rhymes[entry['word']] = entry;
+      if (counter <= 45) {
+        rhymes[entry['word']] = entry;
+        counter++;
+      }
     });
     resolve(rhymes);
   });
